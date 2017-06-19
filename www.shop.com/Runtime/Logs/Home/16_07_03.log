@@ -1,0 +1,14 @@
+[ 2016-07-03T14:46:49+08:00 ] 127.0.0.1 /
+ERR: SQLSTATE[HY000] [1049] Base 'shop' inconnue
+
+[ 2016-07-03T15:30:12+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

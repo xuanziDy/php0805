@@ -1,0 +1,57 @@
+ /**
+     * 把td变成input框，可以修改排序。
+     */
+    //>>1.把双击的td(classs=input)的内容变成一个表单，并显示值，聚焦。
+   //$('tbody').on('dblclick', '.sort', function () {
+   //     var value = $(this).text();
+   //     var input = $(this).html("<input value=''>").find('input');
+   //     input.attr('value',value).focus();
+   // });
+   // //>>2.失去焦点，input变成td,表单中内容变成td中内容，同时发送ajax请求，要求服务器修改库中该行该列的值。
+   // $('.tbody').on('blur','.sort input',function(){
+   //     //得到值
+   //     var value=$(this).val();
+   //     $(this).closest('td').text(value);
+   //     //得到行
+   //     var id=$(this).closest('tr').attr('id');
+   //     //得到列
+   //     var filedName=$(this).closest('td').attr('filedName');
+   //
+   //     console.debug(value);
+   //     console.debug(id);
+   //     console.debug(filedName);
+
+        //$.post('changeSort',{'id':id,'filedName':filedName,'sort':value},function(data){
+        //    //修改成功之后，提示修改成功，并且排序发生变化。
+        //    showLayer(data);
+        //});
+    //});
+
+------------------------------------------------------
+    /**根据id和字段名，修改值。
+     * @param $id
+     * @param $filedName
+     * @param $sort
+     * @return bool
+     */
+//    public function changeSort($id, $filedName, $sort)
+//    {
+//        //修改sort的值。
+//        return $this->where("id=$id")->save("$filedName=$sort");
+//    }
+
+-------------------------
+ //修改排序的值和列表展示顺序。
+//    public function changeSort1(){
+//        alert('2');
+//        $id,$filedName,$sort
+//        $model=D('Supplier');
+//        $rst=$model->changeSort($id,$filedName,$sort);
+//        if($rst!==false){
+//            $this->success('操作成功',cookie('__forword__'),1);
+//        }else{
+//            $this->error('操作失败');
+//        }
+//    }
+
+echo "hello  world";

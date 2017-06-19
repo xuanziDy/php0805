@@ -1,0 +1,263 @@
+[ 2016-05-15T15:42:18+08:00 ] 127.0.0.1 /
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-15T15:48:18+08:00 ] 127.0.0.1 /
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-15T15:50:58+08:00 ] 127.0.0.1 /
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-15T15:55:05+08:00 ] 127.0.0.1 /
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-15T15:55:07+08:00 ] 127.0.0.1 /
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-15T15:55:09+08:00 ] 127.0.0.1 /
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-15T15:57:56+08:00 ] 127.0.0.1 /
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-15T15:58:15+08:00 ] 127.0.0.1 /
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-15T15:58:33+08:00 ] 127.0.0.1 /
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-15T15:58:45+08:00 ] 127.0.0.1 /
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-15T16:00:32+08:00 ] 127.0.0.1 /
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-15T16:00:34+08:00 ] 127.0.0.1 /
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-15T16:03:31+08:00 ] 127.0.0.1 /
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-15T16:33:07+08:00 ] 127.0.0.1 /
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-15T16:33:10+08:00 ] 127.0.0.1 /
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-15T16:58:23+08:00 ] 127.0.0.1 /
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-15T17:05:58+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001528s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000739s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2016-05-15T17:08:36+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001325s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001201s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000932s ]
+
+[ 2016-05-15T17:09:21+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001990s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001620s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001886s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001277s ]
+
+[ 2016-05-15T17:13:25+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001331s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001080s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001106s ]
+
+[ 2016-05-15T17:16:08+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001917s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000928s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001051s ]
+
+[ 2016-05-15T17:26:42+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001006s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001116s ]
+
+[ 2016-05-15T17:30:50+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001732s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000973s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001802s ]
+
+[ 2016-05-15T17:31:01+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001537s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001080s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001075s ]
+
+[ 2016-05-15T17:32:02+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001863s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001365s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001286s ]
+
+[ 2016-05-15T17:32:54+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002268s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001238s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001103s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001279s ]
+
+[ 2016-05-15T17:32:54+08:00 ] 127.0.0.1 /Goods/addViewCount.html?goods_id=35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001857s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001176s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001400s ]
+ERR: 1146:Table 'shop.goods_view_count' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `goods_view_count`
+ERR: 1146:Table 'shop.goods_view_count' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `goods_view_count`
+
+[ 2016-05-15T17:33:46+08:00 ] 127.0.0.1 /Member/checkRepeat.html?username=%E5%A4%A7%E5%A4%A7%E5%A4%A7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001087s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001265s ]
+NOTIC: [2048] Declaration of Home\Model\MemberModel::add() should be compatible with that of Think\Model::add() D:\wamp\WAMP\www\shop\www.shop.com\Application\Home\Model\MemberModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0686s ]
+SQL: SELECT * FROM `member` WHERE `username` = '大大大' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-05-15T17:33:47+08:00 ] 127.0.0.1 /Member/checkRepeat.html?username=%E5%A4%A7%E5%A4%A7%E5%A4%A7%E5%A4%A7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001071s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001242s ]
+NOTIC: [2048] Declaration of Home\Model\MemberModel::add() should be compatible with that of Think\Model::add() D:\wamp\WAMP\www\shop\www.shop.com\Application\Home\Model\MemberModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `member` WHERE `username` = '大大大大' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-05-15T17:33:56+08:00 ] 127.0.0.1 /Member/checkRepeat.html?email=dada%40qqcom
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001330s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001076s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001250s ]
+NOTIC: [2048] Declaration of Home\Model\MemberModel::add() should be compatible with that of Think\Model::add() D:\wamp\WAMP\www\shop\www.shop.com\Application\Home\Model\MemberModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `member` WHERE `email` = 'dada@qqcom' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-15T17:58:17+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002707s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001183s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000909s ]
+
+[ 2016-05-15T17:58:31+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001942s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001696s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001921s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001105s ]
+
+[ 2016-05-15T17:58:31+08:00 ] 127.0.0.1 /Goods/addViewCount.html?goods_id=35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002151s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001614s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001864s ]
+ERR: 1146:Table 'shop.goods_view_count' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `goods_view_count`
+ERR: 1146:Table 'shop.goods_view_count' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `goods_view_count`
+
+[ 2016-05-15T17:58:35+08:00 ] 127.0.0.1 /Login/checkLogin.html
+ERR: 无法加载控制器:Login
+
+[ 2016-05-15T17:58:39+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001868s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001448s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001330s ]
+
+[ 2016-05-15T17:58:39+08:00 ] 127.0.0.1 /Goods/addViewCount.html?goods_id=35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001400s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001147s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001336s ]
+ERR: 1146:Table 'shop.goods_view_count' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `goods_view_count`
+ERR: 1146:Table 'shop.goods_view_count' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `goods_view_count`
+

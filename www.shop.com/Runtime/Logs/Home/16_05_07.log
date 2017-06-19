@@ -1,0 +1,42 @@
+[ 2016-05-07T14:33:39+08:00 ] 127.0.0.1 /www.shop.com/
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-07T14:34:38+08:00 ] 127.0.0.1 /www.shop.com/
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-07T14:34:49+08:00 ] 127.0.0.1 /www.shop.com/
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-07T16:16:58+08:00 ] 127.0.0.1 /www.shop.com/
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-07T16:34:07+08:00 ] 127.0.0.1 /www.shop.com/
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-07T16:52:21+08:00 ] 127.0.0.1 /shop/www.shop.com/
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-07T16:55:03+08:00 ] 127.0.0.1 /shop/www.shop.com/
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-07T17:11:28+08:00 ] 127.0.0.1 /shop/www.shop.com/
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-07T17:12:10+08:00 ] 127.0.0.1 /shop/www.shop.com/
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-07T17:18:22+08:00 ] 127.0.0.1 /shop/www.shop.com/
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-07T17:39:34+08:00 ] 127.0.0.1 /shop/www.shop.com/
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-07T17:43:38+08:00 ] 127.0.0.1 /shop/www.shop.com/
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-07T17:44:59+08:00 ] 127.0.0.1 /shop/www.shop.com/
+ERR: _NOT_SUPPERT_:redis
+
+[ 2016-05-07T17:46:14+08:00 ] 127.0.0.1 /shop/www.shop.com/
+ERR: _NOT_SUPPERT_:redis
+

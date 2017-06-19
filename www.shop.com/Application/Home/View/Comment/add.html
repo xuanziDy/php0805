@@ -1,0 +1,115 @@
+<extend name="Index/common"/>
+<block name="css">
+    <link rel="stylesheet" href="__CSS__/index.css" type="text/css">
+</block>
+<block name="cate"></block>
+<block name="article"></block>
+<block name="center">
+    <div style="margin-left:149px;; width:1200px; border: 1px dashed #aaaaaa;">
+        <form action="" method="post" class="form-data">
+            <table class="comment">
+                <tr class="tr1">
+                    <td>
+                        星级：
+                        <input type="radio" name="start" class="start" value="1" /> 好评
+                        <input type="radio" name="start" class="start" value="2" /> 中评
+                        <input type="radio" name="start" class="start" value="3" /> 差评
+                        <p class="start_error" style="color: red;margin-top:2px;line-height:40px;"></p>
+                    </td>
+                </tr>
+                <tr class="tr2">
+                    <td>
+                        <textarea name="content" class="content" id="content" cols="80" rows="20"></textarea>
+                        <!--<textarea name="content" class="content" id="content"></textarea>-->
+                        <!--<textarea name="content" class="content" cols="94px" rows="10px"></textarea>-->
+                        <p class="content_error" style="color: red;margin-top:2px;line-height:40px;"></p>
+                    </td>
+
+                </tr>
+                <tr class="tr3">
+
+                    <td style="position:relative;">
+                        <!--<input type="submit" value="提交评论"/>-->
+                        <a href="javascript:;" class="add_comment" style="color:#ffffff;background-color:#D90505; width:100px;display:block;line-height:45px;position:absolute;left:539px;top:1px;">提交评论</a>
+                        <input type="hidden" name="order_id" value="{$order_id}">
+                        <input type="hidden" name="goods_ids" value="{$goods_ids}">
+                    </td>
+
+                </tr>
+            </table>
+        </form>
+    </div>
+</block>
+<block name="css">
+    <style type="text/css">
+        .comment{
+            width:960px;
+            overflow: auto;
+        }
+        .comment tr{
+            width:960px;
+            text-align: center;;
+        }
+        .comment .tr1{
+
+            height:50px;
+            line-height: 50px;;
+        }
+        .comment .tr3{
+
+            height:50px;
+            line-height: 50px;;
+        }
+    </style>
+</block>
+<block name="js">
+    <script type="text/javascript" src="__LAYER__"></script>
+    <!--<script type="text/javascript" charset="utf-8" src="__UEDITOR__/ueditor.config.js"></script>-->
+    <!--<script type="text/javascript" charset="utf-8" src="__UEDITOR__/ueditor.all.min.js"></script>-->
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <!--<script type="text/javascript" charset="utf-8" src="__UEDITOR__/lang/zh-cn/zh-cn.js"></script>-->
+    <script type="text/javascript">
+        $(function(){
+            /*---------------------------加载百度编辑器----开始-----------*/
+//            UE.getEditor('content');
+            /*---------------------------加载百度编辑器----结束-----------*/
+
+            /*----------------------------保存评论---------开始-------------*/
+            $('.add_comment').click(function(){
+                var start= $('input[name="start"]:checked').val();
+//                var content= UE.getEditor('content').getContent();
+                var content=$('#content').val();
+
+//                console.debug(content);
+//                console.debug(start);
+
+                if(start==undefined){
+                    $('.start_error').html('请选择等级');
+                }else{
+                    $('.start_error').html('');
+                }
+                if(content==null || content==''){
+                    $('.content_error').html('请填写内容');
+                }else{
+                    $('.content_error').html('');
+                }
+                var form_data=$('.form-data').serialize();
+//                console.debug(form_data);
+                if(start && content){
+                    $.post("{:U('Comment/add')}",form_data,function(data){
+                        if(data.status){
+                            layer.msg(data.info, {
+                                icon: data.status ? 1 : 2,  //1是√，2是×
+                                time: 1000 //1秒关闭（如果不配置，默认是3秒）
+                            }, function () {
+                                location.href = data.url; //提示框隐藏之后就刷新页面。
+                            });
+                        }
+                    });
+                }
+            });
+
+            /*----------------------------保存评论---------结束-------------*/
+        });
+    </script>
+</block>

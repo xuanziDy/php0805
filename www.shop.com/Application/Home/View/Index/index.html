@@ -1,0 +1,158 @@
+<extend name="common"/>
+<block name="css">
+    <link rel="stylesheet" href="__CSS__/index.css" type="text/css">
+</block>
+<!--<block name="search"></block>-->
+<block name="center">
+    <!-- 综合区域 start 包括幻灯展示，商城快报 -->
+    <div class="colligate w1210 bc mt10">
+        <!-- 幻灯区域 start -->
+        <div class="slide fl">
+            <div class="area">
+                <div class="slide_items">
+                    <ul>
+                        <li><a href=""><img src="__IMG__/index_slide1.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="__IMG__/index_slide2.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="__IMG__/index_slide3.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="__IMG__/index_slide4.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="__IMG__/index_slide5.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="__IMG__/index_slide6.jpg" alt=""/></a></li>
+                    </ul>
+                </div>
+                <div class="slide_controls">
+                    <ul>
+                        <li class="on">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 幻灯区域 end-->
+    </div>
+    <!-- -综合区域 end -->
+
+    <div style="clear:both;"></div>
+
+    <!-- 导购区域 start -->
+    <div class="guide w1210 bc mt15">
+        <!-- 导购左边区域 start -->
+        <div class="guide_content fl">
+            <h2>
+                <span class="on">疯狂抢购</span>
+                <span>热卖商品</span>
+                <span>推荐商品</span>
+                <span>新品上架</span>
+                <span class="last">猜您喜欢</span>
+            </h2>
+
+            <div class="guide_wrap">
+                <!-- 疯狂抢购 start-->
+                <div class="crazy">
+                    <ul>
+                        <volist name="goods_1s" id="goods_1">
+                            <li>
+                                <dl>
+                                    <dt><a href="{:U('show',array('id'=>$goods_1['id']))}"><img src="http://admin.shop.com/Uploads/{$goods_1.logo}" alt="" /></a></dt>
+                                    <dd><a href="{:U('show',array('id'=>$goods_1['id']))}">{$goods_1.name}</a></dd>
+                                    <dd><span>售价：</span><strong> ￥{$goods_1.shop_price}</strong></dd>
+                                </dl>
+                            </li>
+                        </volist>
+                    </ul>
+                </div>
+                <!-- 疯狂抢购 end-->
+
+                <!-- 热卖商品 start -->
+                <div class="hot none">
+                    <ul>
+                        <volist name="goods_2s" id="goods_2">
+                            <li>
+                                <dl>
+                                    <dt><a href="{:U('show',array('id'=>$goods_2['id']))}"><img src="http://admin.shop.com/Uploads/{$goods_2.logo}" alt="" /></a></dt>
+                                    <dd><a href="{:U('show',array('id'=>$goods_2['id']))}">{$goods_2.name}</a></dd>
+                                    <dd><span>售价：</span><strong> ￥{$goods_2.shop_price}</strong></dd>
+                                </dl>
+                            </li>
+                        </volist>
+                    </ul>
+                </div>
+                <!-- 热卖商品 end -->
+
+                <!-- 推荐商品 atart -->
+                <div class="recommend none">
+                    <ul>
+                        <volist name="goods_4s" id="goods_4">
+                            <li>
+                                <dl>
+                                    <dt><a href="{:U('show',array('id'=>$goods_4['id']))}"><img src="http://admin.shop.com/Uploads/{$goods_4.logo}" alt="" /></a></dt>
+                                    <dd><a href="{:U('show',array('id'=>$goods_4['id']))}">{$goods_4.name}</a></dd>
+                                    <dd><span>售价：</span><strong> ￥{$goods_4.shop_price}</strong></dd>
+                                    <!--<dd>{:U(print_r($goods_2['logo']))}</dd>-->
+                                </dl>
+                            </li>
+                        </volist>
+                    </ul>
+                </div>
+                <!-- 推荐商品 end -->
+
+                <!-- 新品上架 start-->
+                <div class="new none">
+                    <ul>
+                        <volist name="goods_8s" id="goods_8">
+                            <li>
+                                <dl>
+                                    <dt><a href="{:U('show',array('id'=>$goods_8['id']))}"><img src="http://admin.shop.com/Uploads/{$goods_8.logo}" alt="" /></a></dt>
+                                    <dd><a href="{:U('show',array('id'=>$goods_8['id']))}">{$goods_8.name}</a></dd>
+                                    <dd><span>售价：</span><strong> ￥{$goods_8.shop_price}</strong></dd>
+                                </dl>
+                            </li>
+                        </volist>
+                    </ul>
+                </div>
+                <!-- 新品上架 end-->
+
+                <!-- 猜您喜欢 start -->
+                <div class="guess none">
+                    <ul>
+                        <volist name="goods_16s" id="goods_16">
+                            <li>
+                                <dl>
+                                    <dt><a href="{:U('show',array('id'=>$goods_16['id']))}"><img src="http://admin.shop.com/Uploads/{$goods_16.logo}" alt="" /></a></dt>
+                                    <dd><a href="{:U('show',array('id'=>$goods_16['id']))}">{$goods_16.name}</a></dd>
+                                    <dd><span>售价：</span><strong> ￥{$goods_16.shop_price}</strong></dd>
+                                </dl>
+                            </li>
+                        </volist>
+                    </ul>
+                </div>
+                <!-- 猜您喜欢 end -->
+
+            </div>
+
+        </div>
+        <!-- 导购左边区域 end -->
+    </div>
+    <!-- 导购区域 end -->
+
+    <div style="clear:both;"></div>
+
+    <!--1F 电脑办公 start -->
+    <div class="floor1 floor w1210 bc mt10">
+            <div class="news mt10">
+                <h2><strong>网站快报</strong></h2>
+                <ul>
+                    <volist name="news" id="new">
+                            <li><a href="">{$new.name}</a></li>
+                    </volist>
+                </ul>
+            </div>
+    </div>
+    <!--1F 电脑办公 end -->
+</block>
+<block name="js">
+    <script type="text/javascript" src="__JS__/index.js"></script>
+</block>

@@ -1,0 +1,416 @@
+[ 2016-05-23T00:00:20+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003092s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001534s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002136s ]
+
+[ 2016-05-23T21:14:28+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001514s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000966s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001412s ]
+
+[ 2016-05-23T21:20:03+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001522s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.002339s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001129s ]
+
+[ 2016-05-23T21:20:08+08:00 ] 127.0.0.1 /ShoppingCar/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001090s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001262s ]
+
+[ 2016-05-23T21:26:36+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000698s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000877s ]
+
+[ 2016-05-23T21:26:36+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001655s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001400s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001672s ]
+
+[ 2016-05-23T21:26:37+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001941s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000978s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001263s ]
+
+[ 2016-05-23T21:26:38+08:00 ] 127.0.0.1 /ShoppingCar/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001704s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001032s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001349s ]
+NOTIC: [2048] Declaration of Home\Model\ShoppingCarModel::add() should be compatible with that of Think\Model::add() D:\wamp\WAMP\www\shop\www.shop.com\Application\Home\Model\ShoppingCarModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `shopping_car` [ RunTime:0.0482s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shopping_car` WHERE `member_id` = 21 AND `goods_id` = 36 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `shopping_car` (`num`,`goods_id`,`member_id`) VALUES ('1','36','21') [ RunTime:0.0006s ]
+
+[ 2016-05-23T21:26:38+08:00 ] 127.0.0.1 /ShoppingCar/getCartNum.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001573s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001083s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001352s ]
+NOTIC: [2048] Declaration of Home\Model\ShoppingCarModel::add() should be compatible with that of Think\Model::add() D:\wamp\WAMP\www\shop\www.shop.com\Application\Home\Model\ShoppingCarModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `shopping_car` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shopping_car` WHERE `member_id` = 21 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-23T21:26:42+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001692s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000846s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001090s ]
+
+[ 2016-05-23T21:26:47+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002240s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001061s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001719s ]
+
+[ 2016-05-23T21:26:52+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001835s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.002661s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.003062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001364s ]
+
+[ 2016-05-23T21:26:55+08:00 ] 127.0.0.1 /ShoppingCar/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001583s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000892s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001150s ]
+
+[ 2016-05-23T21:30:17+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002243s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001024s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001271s ]
+
+[ 2016-05-23T21:30:20+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001724s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000770s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001200s ]
+
+[ 2016-05-23T21:30:24+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001860s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000898s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001283s ]
+
+[ 2016-05-23T21:30:26+08:00 ] 127.0.0.1 /ShoppingCar/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001617s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000601s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000813s ]
+
+[ 2016-05-23T21:30:57+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002084s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001061s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001327s ]
+
+[ 2016-05-23T21:31:01+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001809s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000834s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001055s ]
+
+[ 2016-05-23T21:31:03+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002311s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001213s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001522s ]
+
+[ 2016-05-23T21:31:04+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002675s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000813s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001063s ]
+
+[ 2016-05-23T21:31:06+08:00 ] 127.0.0.1 /ShoppingCar/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001800s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000828s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001030s ]
+NOTIC: [2048] Declaration of Home\Model\ShoppingCarModel::add() should be compatible with that of Think\Model::add() D:\wamp\WAMP\www\shop\www.shop.com\Application\Home\Model\ShoppingCarModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `shopping_car` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shopping_car` WHERE `member_id` = 21 AND `goods_id` = 36 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `shopping_car` SET `num`=num+1 WHERE `member_id` = 21 AND `goods_id` = 36 [ RunTime:0.0006s ]
+
+[ 2016-05-23T21:31:06+08:00 ] 127.0.0.1 /ShoppingCar/getCartNum.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001816s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000880s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001121s ]
+NOTIC: [2048] Declaration of Home\Model\ShoppingCarModel::add() should be compatible with that of Think\Model::add() D:\wamp\WAMP\www\shop\www.shop.com\Application\Home\Model\ShoppingCarModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `shopping_car` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shopping_car` WHERE `member_id` = 21 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-05-23T21:31:13+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003309s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000843s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001092s ]
+
+[ 2016-05-23T21:32:24+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001828s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001463s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001916s ]
+
+[ 2016-05-23T21:33:58+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002913s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001774s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002231s ]
+
+[ 2016-05-23T21:35:21+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002082s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000987s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001202s ]
+
+[ 2016-05-23T21:36:37+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002305s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001319s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001561s ]
+
+[ 2016-05-23T21:36:58+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002392s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001308s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001624s ]
+
+[ 2016-05-23T21:41:47+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001905s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001150s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001372s ]
+
+[ 2016-05-23T21:42:17+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002446s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001469s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001731s ]
+
+[ 2016-05-23T21:42:33+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002419s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001015s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001273s ]
+
+[ 2016-05-23T21:43:05+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001582s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001389s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001613s ]
+
+[ 2016-05-23T21:44:09+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002578s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001701s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002010s ]
+
+[ 2016-05-23T21:46:21+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002547s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001466s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001746s ]
+
+[ 2016-05-23T21:46:48+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003053s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001566s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001868s ]
+
+[ 2016-05-23T21:48:18+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002079s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001099s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001352s ]
+
+[ 2016-05-23T21:51:28+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001989s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000997s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001298s ]
+
+[ 2016-05-23T21:51:51+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003685s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001654s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002003s ]
+
+[ 2016-05-23T21:54:37+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002495s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.003098s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.003414s ]
+
+[ 2016-05-23T21:55:00+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002246s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001783s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002090s ]
+
+[ 2016-05-23T21:57:57+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001507s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001059s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001319s ]
+
+[ 2016-05-23T21:58:00+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001809s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000870s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001120s ]
+
+[ 2016-05-23T21:59:57+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002081s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001360s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001624s ]
+
+[ 2016-05-23T22:00:55+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001614s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001288s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001554s ]
+
+[ 2016-05-23T22:01:13+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002723s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001296s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001649s ]
+
+[ 2016-05-23T22:02:43+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001980s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.000698s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000885s ]
+
+[ 2016-05-23T22:03:01+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001551s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001603s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001943s ]
+

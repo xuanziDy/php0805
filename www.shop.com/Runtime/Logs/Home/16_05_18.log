@@ -1,0 +1,34 @@
+[ 2016-05-18T22:51:28+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002415s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001405s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001017s ]
+
+[ 2016-05-18T23:15:52+08:00 ] 127.0.0.1 /Member/getUserInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001911s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001232s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001461s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001118s ]
+
+[ 2016-05-18T23:15:52+08:00 ] 127.0.0.1 /Goods/addViewCount.html?goods_id=35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002216s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Home\Behavior\CheckUserBehavior [ RunTime:0.001410s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001645s ]
+ERR: 1146:Table 'shop.goods_view_count' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `goods_view_count`
+ERR: 1146:Table 'shop.goods_view_count' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `goods_view_count`
+

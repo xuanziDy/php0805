@@ -1,0 +1,241 @@
+<extend name="Index/common"/>
+<block name="css">
+	<link rel="stylesheet" href="__CSS__/index.css" type="text/css">
+	<link rel="stylesheet" href="__CSS__/home.css" type="text/css">
+	<link rel="stylesheet" href="__CSS__/address.css" type="text/css">
+</block>
+<block name="cate"></block>
+
+<block name="center">
+	<!-- 页面主体 start -->
+	<div class="main w1210 bc mt10">
+		<!-- 右侧内容区域 start -->
+		<div class="content  ml10">
+			<div class="address_hd">
+				<h3>收货地址薄</h3>
+				<volist name="addresses" id="address">
+					<dl>
+						<dt>{$i}.{$address.receiver} {$address.province_name} {$address.city_name} {$address.area_name} {$address.detail_address} {$address.tel} </dt>
+						<dd>
+							<!--<a  class="edit_address" href="{:U('Address/edit',array('id'=>$address['id']))}">修改</a>-->
+							<a  class="ajax-get" href="{:U('Address/remove',array('id'=>$address['id']))}">删除</a>
+							<eq name="address.is_default" value="0">
+							<a class="ajax-get" href="{:U('changeIsDefault',array('id'=>$address['id'],'is_default'=>1-$address['is_default']))}">设为默认地址</a>
+							<else/>
+								默认地址
+							</eq>
+						</dd>
+					</dl>
+				</volist>
+
+			</div>
+
+			<div class="address_bd mt10">
+				<h4>新增/修改收货地址</h4>
+				<form action="" name="address_form" class="address_form">
+						<ul>
+							<li>
+								<label for=""><span>*</span>收 货 人：</label>
+								<input type="text" name="receiver" id="receiver" class="txt" />
+								<p class="receiver_error" style="color: red;margin-top:2px;line-height:40px;"></p>
+							</li>
+							<li>
+								<label for=""><span>*</span>所在地区：</label>
+								<select name="province_id" id="province_id">
+									<option value="">请选择</option>
+									<volist name="provinces" id="provice">
+										<option value="{$provice.id}">{$provice.name}</option>
+									</volist>
+								</select>
+
+								<select name="city_id" id="city_id">
+									<option value="">请选择</option>
+								</select>
+
+								<select name="area_id" id="area_id">
+									<option value="">请选择</option>
+								</select>
+								<p class="area_error" style="color: red;margin-top:2px;line-height:40px;"></p>
+							</li>
+							<li>
+								<label for=""><span>*</span>详细地址：</label>
+								<input type="text" name="detail_address" id="detail_address" class="txt address"  />
+								<p class="detail_address_error" style="color: red;margin-top:2px;line-height:40px;"></p>
+							</li>
+							<li>
+								<label for=""><span>*</span>手机号码：</label>
+								<input type="text" name="tel" id="tel" class="txt" />
+								<p class="tel_error" style="color: red;margin-top:2px;line-height:40px;"></p>
+							</li>
+							<li>
+								<label for="">&nbsp;</label>
+								<input type="checkbox" name="is_default" id="is_default" value="1" class="check" />设为默认地址
+							</li>
+							<li>
+								<label for="">&nbsp;</label>
+								<input type="hidden" name="id" id="id"/>
+								<input type="button"  name="" class="btn submit_address_form" value="保存" />
+							</li>
+							<li></li>
+						</ul>
+					</form>
+			</div>
+		</div>
+		<!-- 右侧内容区域 end -->
+	</div>
+	<!-- 页面主体 end-->
+</block>
+
+<block name="article"></block>
+<block name="js">
+	<script type="text/javascript" src="__JS__/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="__JS__/header.js"></script>
+	<script type="text/javascript" src="__JS__/home.js"></script>
+	<script type="text/javascript" src="__LAYER__"></script>
+	<script type="text/javascript">
+		$(function(){
+			//市级城市
+			$('#province_id').change(function(){
+				//>>清空原有的数据。
+				$('#city_id').get(0).length=1;
+				$('#area_id').get(0).length=1;
+				//>>发送ajax请求去得到该省份下面的城市。
+				var params=$(this).val();
+				$.getJSON('{:U("Region/getChildren")}',{"parent_id":params},function(rows){
+					$(rows).each(function(){
+						$("<option value='"+this.id+"'>"+this.name+"</option>").appendTo('#city_id');
+					});
+				});
+			});
+			//>>县级城市
+			$('#city_id').change(function(){
+				//>>清空原有的数据。
+				$('#area_id').get(0).length=1;
+				//>>发送ajax请求去得到该省份下面的城市。
+				var params=$(this).val();
+				$.getJSON('{:U("Region/getChildren")}',{"parent_id":params},function(rows){
+					$(rows).each(function(){
+						$("<option value='"+this.id+"'>"+this.name+"</option>").appendTo('#area_id');
+					});
+				});
+			});
+
+
+			////////////////////////////////点击保存，使用ajax请求传递数据，刷新页面展示新数据/////////////////////////////////////////
+			$('.submit_address_form').click(function(){
+				//验证数据合法性
+				var receiver=$('#receiver').val();
+//				console.debug(receiver);
+				var province_id=$('#province_id').val();
+				var city_id=$('#city_id').val();
+				var detail_address=$('#detail_address').val();
+				var tel=$('#tel').val();
+
+				if(receiver==null ||receiver==''){
+//					console.debug(1);
+					$('.receiver_error').html('收货人不能为空');
+				}else{
+//					console.debug(2);
+					$('.receiver_error').html('');
+				}
+
+				if(!province_id || !city_id){
+					$('.area_error').html('至少要选择省份和市区');
+				}else{
+					$('.area_error').html('');
+				}
+
+				if(!detail_address){
+					$('.detail_address_error').html('请填写详细的地址');
+				}else{
+					$('.detail_address_error').html('');
+				}
+
+				var reg=/^1[358][0-9]{9}$/;
+				var is_true=false;
+				if(!reg.test(tel)){
+					$('.tel_error').html('请填写正确的手机号码');
+					is_true=false;
+				}else{
+					$('.tel_error').html('');
+					is_true=true;
+				}
+
+				if(is_true && receiver && province_id && city_id　&& detail_address && tel){
+					//>>.得到表单数据，
+					var params=$('.address_form').serialize();
+					$.post('{:U("add")}',params,function(data){
+						if(data.status){
+//							window.location.reload(true); //true表示强制刷新
+							layer.msg(data.info, {
+								icon: data.status ? 1 : 2,  //1是√，2是×
+								time: 1000 //1秒关闭（如果不配置，默认是3秒）
+							}, function () {
+								location.href = data.url; //提示框隐藏之后就刷新页面。
+							});
+						}
+					});
+				}
+			});
+
+			////////////////////////////用ajax请求去回显数据////////////////////////////
+			$('.edit_address').click(function(){
+				$.get($(this).attr('href'),function(data){
+					//找到节点，回显。
+					$('#receiver').val(data.receiver);
+					$('#detail_address').val(data.detail_address);
+					$('#tel').val(data.tel);
+					$('#is_default').val([data.is_default]); //单选框，选中
+					$('#province_id').val(data.province_id);  //选中省份
+					$('#id').val(data.id);
+
+					//获取到城市并且选中指定的城市
+					$.getJSON('{:U("Region/getChildren")}',{parent_id:data.province_id},function(rows){
+						$(rows).each(function(){
+							$("<option value='"+this.id+"'>"+this.name+"</option>").appendTo("#city_id");
+						});
+						$('#city_id').val(data.city_id);
+
+					});
+
+					//获取到区县并且选中指定的区县
+					$.getJSON('{:U("Region/getChildren")}',{parent_id:data.city_id},function(rows){
+						$(rows).each(function(){
+							$("<option value='"+this.id+"'>"+this.name+"</option>").appendTo("#area_id");
+						});
+						$('#area_id').val(data.area_id);
+					});
+
+				});
+				return false;
+			});
+
+
+			//////////////////使用ajax进行删除/////////////////////////////
+			$('.ajax-get').click(function(){
+				$.get($(this).attr('href'),function(data){
+					if(data.status){
+						window.location.reload();
+					}else{
+						alert(data.info);
+					}
+				});
+				return false;
+			});
+
+			////////////////////////登录名展示////////////////////////////////////
+
+			//>>1.页面加载完毕之后，发送ajax请求去得到当前登录的用户，用js区修改静态页面的效果。
+			$.getJSON('{:U("Member/getUserInfo")}',function(username){
+				//用户登录了
+				if(username){
+					$('#userinfo').html("您好，欢迎 "+username+" 来到 韩国馆！[<a href='{:U("Member/logout")}'>注销</a>]");
+				}
+			});
+
+			////////////////////////登录名展示////////////////////////////////////
+		});
+	</script>
+</block>
+</body>
+</html>

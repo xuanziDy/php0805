@@ -1,0 +1,3 @@
+<?php
+//000000000000a:6:{i:0;a:2:{s:19:"article_category_id";s:1:"2";s:4:"name";s:3:"123";}i:1;a:2:{s:19:"article_category_id";s:1:"1";s:4:"name";s:12:"购物流程";}i:2;a:2:{s:19:"article_category_id";s:1:"2";s:4:"name";s:12:"上门自提";}i:3;a:2:{s:19:"article_category_id";s:1:"3";s:4:"name";s:12:"货到付款";}i:4;a:2:{s:19:"article_category_id";s:1:"4";s:4:"name";s:15:"退换货政策";}i:5;a:2:{s:19:"article_category_id";s:1:"5";s:4:"name";s:9:"夺宝岛";}}
+?>
